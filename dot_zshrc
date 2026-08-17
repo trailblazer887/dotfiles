@@ -100,3 +100,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fd=fdfind
+
+
+# History management
+export HISTSIZE=5000
+export SAVEHIST=5000
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+export HISTORY_IGNORE="(clear|bg|fg|cd|cd -|cd ..|exit|date|w|* --help|ls|l|ll|lll)"
