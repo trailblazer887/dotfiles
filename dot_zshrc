@@ -108,3 +108,10 @@ export SAVEHIST=5000
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 export HISTORY_IGNORE="(clear|bg|fg|cd|cd -|cd ..|exit|date|w|* --help|ls|l|ll|lll)"
+
+# =============
+# NO CAPABILITY
+# =============
+
+# Pi
+export PATH="/home/trbla/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"
