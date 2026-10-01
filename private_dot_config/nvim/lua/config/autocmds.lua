@@ -6,3 +6,11 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "c", "cpp" }, -- 可以按需加上 "h" 等
+  callback = function()
+    -- 为当前缓冲区禁用保存时自动格式化
+    vim.b.autoformat = false
+  end,
+})
