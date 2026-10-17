@@ -101,6 +101,20 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fd=fdfind
 
+# eza
+# font: AdwaitaMono
+alias ls='eza --icons --group-directories-first'
+alias ll='eza -lh --icons --git --group-directories-first --time-style +%Y-%m-%d\ %H:%M:%S'
+alias la='eza -lah --icons --git --group-directories-first --time-style +%Y-%m-%d\ %H:%M:%S'
+lt() {
+  local level=2
+  if [[ "$1" == <-> ]]; then
+    level=$1
+    shift
+  fi
+  eza --tree --level="$level" --icons "$@"
+}
+
 
 # History management
 export HISTSIZE=5000
@@ -109,9 +123,13 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 export HISTORY_IGNORE="(clear|bg|fg|cd|cd -|cd ..|exit|date|w|* --help|ls|l|ll|lll)"
 
+
 # =============
 # NO CAPABILITY
 # =============
+
+# riscv64 toolchains
+export PATH="$HOME/riscv64/riscv/bin:$PATH"
 
 # Pi
 export PATH="/home/trbla/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"
