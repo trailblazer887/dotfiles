@@ -123,6 +123,8 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 export HISTORY_IGNORE="(clear|bg|fg|cd|cd -|cd ..|exit|date|w|* --help|ls|l|ll|lll)"
 
+# Enable kitty to use the input method normally
+export GLFW_IM_MODULE=ibus
 
 # =============
 # NO CAPABILITY
@@ -133,3 +135,6 @@ export PATH="$HOME/riscv64/riscv/bin:$PATH"
 
 # Pi
 export PATH="/home/trbla/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"
+
+# bcc
+export PATH="$PATH:/usr/share/bcc/tools"
