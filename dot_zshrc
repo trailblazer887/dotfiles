@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -123,7 +123,7 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 export HISTORY_IGNORE="(clear|bg|fg|cd|cd -|cd ..|exit|date|w|* --help|ls|l|ll|lll)"
 
-# Enable kitty to use the input method normally
+# Enable kitty to use the input method normally(for x11)
 export GLFW_IM_MODULE=ibus
 
 # =============
