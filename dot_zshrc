@@ -105,8 +105,8 @@ alias fd=fdfind
 # eza
 # font: AdwaitaMono
 alias ls='eza --icons --group-directories-first --sort=modified --reverse'
-alias ll='eza -lh --icons --git --group-directories-first --sort=modified --reverse --time-style "+%Y-%m-%d %H:%M:%S"'
-alias la='eza -lah --icons --git --group-directories-first --sort=modified --reverse --time-style "+%Y-%m-%d %H:%M:%S"'
+alias ll='eza -lgh --icons --git --group-directories-first --sort=modified --reverse --time-style "+%Y-%m-%d %H:%M:%S"'
+alias la='eza -lagh --icons --git --group-directories-first --sort=modified --reverse --time-style "+%Y-%m-%d %H:%M:%S"'
 lt() {
   local level=2
   if [[ "$1" == <-> ]]; then
