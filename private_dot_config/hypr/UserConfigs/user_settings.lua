@@ -72,3 +72,7 @@ hl.config({
 -- 		warp_on_change_workspace = 0,
 -- 	},
 -- })
+
+-- 关闭色彩管理/HDR：10bit 输出会让 grim 1.4 截图失败（failed to create buffer）
+-- 需要 HDR 时改为 true 并 reload，或升级 grim >= 1.5
+hl.config({ render = { cm_enabled = false } })
