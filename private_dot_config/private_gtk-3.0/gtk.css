@@ -1,0 +1,4 @@
+/* 图标私用区码位优先用 Nerd Font，避免被中文字体抢走 */
+* {
+  font-family: "Ubuntu Sans", "JetBrainsMono Nerd Font", sans-serif;
+}
