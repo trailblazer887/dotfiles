@@ -191,3 +191,12 @@ bind(
 	exec_cmd("$HOME/.config/hypr/scripts/ScreenShot.sh --swappy"),
 	{ description = "screenshot area + swappy (CTRL+F12)", locked = true }
 )
+
+-- 调用自己的锁屏配置
+unbind("CTRL ALT", "L")
+bind(
+	"CTRL ALT",
+	"L",
+	exec_cmd("$HOME/.config/hypr/UserScripts/LockScreen.sh"),
+	{ description = "lock screen (mine)", locked = true }
+)
