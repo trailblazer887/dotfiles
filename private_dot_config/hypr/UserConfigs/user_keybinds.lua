@@ -158,3 +158,36 @@ bind(
 	exec_cmd("$HOME/.config/hypr/UserScripts/Brightness.sh --dec"),
 	{ description = "decrease monitor brightness (mine)", locked = true, repeating = true }
 )
+
+-- 截图
+-- SUPER+F12          全屏截图
+-- SHIFT+F12    区域截图
+-- ALT+F12      当前窗口
+-- CTRL+F12     区域截图 + swappy 编辑
+bind(
+	"SUPER",
+	"F12",
+	exec_cmd("$HOME/.config/hypr/scripts/ScreenShot.sh --now"),
+	{ description = "screenshot full (SUPER+F12)", locked = true }
+)
+
+bind(
+	"SHIFT",
+	"F12",
+	exec_cmd("$HOME/.config/hypr/scripts/ScreenShot.sh --area"),
+	{ description = "screenshot area (SHIFT+F12)", locked = true }
+)
+
+bind(
+	"ALT",
+	"F12",
+	exec_cmd("$HOME/.config/hypr/scripts/ScreenShot.sh --active"),
+	{ description = "screenshot active window (ALT+F12)", locked = true }
+)
+
+bind(
+	"CTRL",
+	"F12",
+	exec_cmd("$HOME/.config/hypr/scripts/ScreenShot.sh --swappy"),
+	{ description = "screenshot area + swappy (CTRL+F12)", locked = true }
+)
