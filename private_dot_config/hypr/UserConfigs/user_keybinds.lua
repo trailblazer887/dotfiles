@@ -200,3 +200,7 @@ bind(
 	exec_cmd("$HOME/.config/hypr/UserScripts/LockScreen.sh"),
 	{ description = "lock screen (mine)", locked = true }
 )
+
+-- 通知（swaync）
+-- SUPER+SHIFT+C 清空全部通知
+bind("SUPER SHIFT", "C", exec_cmd("swaync-client -C"), { description = "clear all notifications" })
